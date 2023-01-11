@@ -55,3 +55,19 @@ Contexto Ej2: Una vez subidos todos los archivos que nos interesan queremos hace
 2.- Haremos git commit -m "Create navbar" para informar de que se ha creado un navbar nuevo los commits suelen ser cortos como el de este ejemplo porque asi sabemos rapido que cambio se ha realizado
 
 --Parte GitHub
+
+git remote add origin git@github.com:Jver28/curso-git.git
+Sirve para subir los archivos que estan en local al repositorio en GitHub con la opcion SSH
+
+git remote -v
+Sireve para ver el origin del repositorio 
+
+Para poder conectar el repositorio con SSH tendremos que ir al siguiente enlace https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+ssh-keygen -t ed25519 -C "jceci2@insdanielblanxart.cat"
+Con este comando crearemos la clave de SSH 
+
+git push -u origin ("nombre del repositorio" en este caso es "master")
+
+ls -al ~/.ssh
+Este comando sirve para poder ver las claves que hemos creado
