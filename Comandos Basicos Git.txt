@@ -70,4 +70,11 @@ Con este comando crearemos la clave de SSH
 git push -u origin ("nombre del repositorio" en este caso es "master")
 
 ls -al ~/.ssh
-Este comando sirve para poder ver las claves que hemos creado
+Este comando sirve para poder ver las claves que hemos creado en mi caso son las siguientes:
+
+id_ed25519 --Aqui dentro esta la clave privada para verla tendriamos que hacer un cat id_ed25519
+id_ed25519.pub --Aqui dentro esta la clave publica para verla tendriamos que hacer un cat id_ed25519.pub
+
+git push -u origin master
+Se utiliza para subir los archivos al repositorio 
+!!Es importante tener el correo en publico en github si no nos tirara un error ("Para poner nuestro correo como publico iremos al siguiente enlace ttp://github.com/settings/emails y una vez dentro buscaremos la opcion Keep my email addresses private i desmarcaremos el checkbox")
