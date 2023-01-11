@@ -1,0 +1,39 @@
+git init 
+Sirve para inicializar un proyecto de git
+
+git status
+Nos dice como esta acutualmente nuestro repositorio
+
+git add ("Nombre archivo ejemplo 'git add index.html'")
+Sirve para subir archivos a git 
+
+git commit -m "Añadido index.html"
+Sirve para comentar el ultimo git add que hemos hecho se usa para describir un poco para lo que sirve la ultima subida de archivos que hemos hecho
+
+git config --global user.email "('Correo Electronico')"
+Es una configuracion global que sirve para decir cual es nuestro correo
+
+git config --global user.user "('Nombre usuario')"
+Es una configuracion global que sirve para decir cual es nuestro nombre de usuario 
+
+git log
+Sirve para ver el utlimo commit que se ha hecho nos dice quien ha sido cuando y el hash del commit
+Output del ultimo commit:
+commit dae9fd5fbe453b924c1eea33dfeb7eab8037323e (HEAD -> master)
+Author: Jver28 <jvercecilia@gmail.com>
+Date:   Wed Jan 11 13:03:13 2023 +0100
+
+    Añadido index.html
+
+git checkout ('Principio del hash del commit que quieramos' ejemplo:dae9f --> que seria el primer commit que se ha hecho)
+Sirve para volver a versiones anteriores del proyecto 
+
+git reset dae9f
+Sirve para eliminar el commit que se ha hecho pero no elimina los cambios que se han hecho 
+
+git reset --hard dae9fd5 
+Sirve para volver a el estado de ese commit elimina todos los commits que se han hecho despues del commit que se ha seleccionado ("Esta opion elimina todos los cambios que se han hecho en los archivos lo que si hacemos mal esto perderemos informacion")
+
+git restore index.html
+Si por algun casual eliminamos el index.html i lo perdemos completamente con este comando recuperaremos el archivo que hemos perdido en el estado del ultimo commit que se ha hecho
+
