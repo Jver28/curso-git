@@ -87,3 +87,11 @@ eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/("Clave privada" en mi caso id_ed25519)
 Nos pedira la contraseña de GitHub la pondremos y ya estaria 
+
+-Ramas ("Branches") en GitHub
+
+git checkout -b feature-posts-styles
+Con esto crearemos una rama nueva y nos meteremos en ella
+
+git branch 
+Sirve para ver todas las ramas que hay en el repositorio

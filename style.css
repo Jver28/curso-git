@@ -1,7 +1,7 @@
 body{
 background-color: #1d2127;
 color: #FFF;
-font-family: "Overpass Mono" monospace;
+font-family: 'Overpass Mono', monospace;
 padding: 0;
 margin: 0;
 }
@@ -22,12 +22,24 @@ h1{
     height: 50px;
 }
 
-.texto{
-    background-color: #1d2127;
-color: #FFF;
-font-family: "Overpass Mono" monospace;
-padding: 0;
-display: flex;
-justify-content: center;
-align-items: center;
+.container {
+    margin-top: 30px;
+    padding: 0 60px 0 60px;
+}
+
+.post{
+    background-color: #282c34;
+    margin-bottom: 15px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 12px;
+}
+
+.post h4{
+    color: #98c379;
+
+}
+
+.post h4{
+    color: #61afaf;
+   
 }
