@@ -1,3 +1,5 @@
+--Parte Git
+
 git init 
 Sirve para inicializar un proyecto de git
 
@@ -37,3 +39,19 @@ Sirve para volver a el estado de ese commit elimina todos los commits que se han
 git restore index.html
 Si por algun casual eliminamos el index.html i lo perdemos completamente con este comando recuperaremos el archivo que hemos perdido en el estado del ultimo commit que se ha hecho
 
+
+
+Ejemplo de como se haria un Git add correctamente
+
+
+Contexto Ej1: Hemos modificado el style.css para darle estilos a el navbar entonces queremos subrir la carpeta entera i hacer un commit correctamente
+
+1.- Nos situamos en el archivio raiz en este caso curso git
+1.1- Hacemos git status para ver todos los cambios que se han hecho pero no subido 
+1.2- Hacemos git add. para subir todos los archivos de el directorio actual 
+
+Contexto Ej2: Una vez subidos todos los archivos que nos interesan queremos hacer un commit para que cuando alguien haga git log vea que cambios se han realizado
+
+2.- Haremos git commit -m "Create navbar" para informar de que se ha creado un navbar nuevo los commits suelen ser cortos como el de este ejemplo porque asi sabemos rapido que cambio se ha realizado
+
+--Parte GitHub
